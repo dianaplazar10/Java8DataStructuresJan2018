@@ -1,0 +1,28 @@
+1) Least frequent element in an array : https://www.geeksforgeeks.org/least-frequent-element-array/
+2)Gold Mine Problem/Flower bed problem : https://www.geeksforgeeks.org/gold-mine-problem/
+3)Lowest common ancestor: lowest common ancestor in binary tree, given two nodes
+1. if the node class had a parent pointer
+2. if the node class did not have a parent pointer 
+4) Print a binary tree level-by-level  
+
+5) Write a function to calculate the maximum depth of a binary tree.  
+Answer Question
+Calculate the shortest distance between 2 words in a word list. The word list is given to the constructor, and may contain more than 1 instance of each word. Example: "the quick brown fox quick jumps", distance(fox, quick) should return 1 (indices for fox = (3), quick = (1, 4), smallest distance is between 3 & 4)  
+
+6) word ladder from Leetcode 
+
+7) dynamic programming, design a client and server system for showing linkedin feeds 
+
+8) sum of nested weighted intergers  
+
+9)Reverse polish notation  
+10)LRU Cache type question with little modification around locks and multithreading.
+11) What is the difference between Thread and process?
+What is the virtual memory?
+Implement get() and put() methods from HashTable ? 
+
+12) Product of Array Except Self 
+
+13) Implement kmeans for a collection of 2d points.  
+
+14) How to build a key value store?  

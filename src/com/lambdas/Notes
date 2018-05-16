@@ -1,0 +1,35 @@
+@FunctionalInterface
+
+-its form java.lang package
+-This annotation indicates that this interface is an interface used as lambda definition. 
+-And hence indicates that it should not be changed to include more unimplemented methods.
+-This annotation is completely optional, but definitely a good practice.
+- If a developer tries to add another method to an interface that is annotated with this annotation, a compiler error pops us.
+--------------------------------------------------------
+
+java.util.function
+
+-This API has multiple common interfaces that acts as lambdas function. some of them are as below
+
+1)Interface Predicate<T>
+This interface takes in an object and returns a boolean, in the method test()
+So, in out example E_passingLamdasOnMeth, the Condition lambda function can be entirely replaced with Predicate pred, as below:
+
+private static void printLastNameStartsWithC(List<E_Person> personsList, Predicate pred) {
+		for(E_Person p : personsList){
+			if(pred.test(p)) // --(a)
+				System.out.println(p.toString());
+		}
+	}
+	
+2)Interface Supplier<>
+This interface doesnt take any input, but returns an object
+
+3)Interface Function<T,R>
+This interface takes in an object T and returns another object R
+
+4)Interface Consumer<T>
+Takes in an object and returns nothing.
+
+5)Interface BiConsumer
+Takes in 2 objects and returns nothing
