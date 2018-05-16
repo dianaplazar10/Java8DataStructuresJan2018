@@ -14,7 +14,9 @@ public class practice {
 		System.out.println();
 		//practice.selectionsort(arr);
 //		practice.insertionSort(arr);
-		practice.mergeSort(arr);
+//		practice.mergeSort(arr);
+		practice.bubbleSort(arr);
+		
 		for(int item :arr) System.out.print(item+" && ");
 	}
 
@@ -91,12 +93,11 @@ public class practice {
 	}
 	
 	private static void bubbleSort(int[] arr){
-		int j=0;
-		for (int i = 0; i < arr.length-2; i++) {
-			j=i+1;
-			while(i<j && arr[j]<arr[j-1]){
-				swap(j-1,j,arr);
-				j++;
+		for (int i = 0; i < arr.length-1; i++) {
+			for (int j = 0; j < arr.length-i-1; j++) {				
+				if(arr[j+1]<arr[j]){
+					swap(j+1,j,arr);
+				}
 			}
 		}
 	}
