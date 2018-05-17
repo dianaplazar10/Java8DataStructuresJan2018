@@ -17,16 +17,16 @@ public class MergeSort {
             mergesort(0, number - 1);
     }
 
+    // check if low is smaller then high, if not then the array is sorted
+    // Get the index of the element which is in the middle
+    // Sort the left side of the array
+    // Sort the right side of the array
+    // Combine them both
     private void mergesort(int low, int high) {
-            // check if low is smaller then high, if not then the array is sorted
             if (low < high) {
-                    // Get the index of the element which is in the middle
                     int middle = low + (high - low) / 2;
-                    // Sort the left side of the array
                     mergesort(low, middle);
-                    // Sort the right side of the array
                     mergesort(middle + 1, high);
-                    // Combine them both
                     merge(low, middle, high);
             }
     }
