@@ -5,7 +5,9 @@ package com.algorithms;
 
 /*if a tree sorted and saved in array.. Then.
 Every parent has its left child in index = 2k+1 and rt child in index, 2k+2,
-where k= index of parent*/
+where k= index of parent
+Given a node index 'n', the parent index=((n/2)-1)
+*/
 public class HeapSort 
 {
     private static int[] a;

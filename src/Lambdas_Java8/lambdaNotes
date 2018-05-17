@@ -1,0 +1,4 @@
+Max of a 2 dimentional array in lambdas:
+---------------------------------------
+	IntStream stream = Arrays.stream(arr).flatMapToInt(Arrays::stream);
+	int max = stream.max().getAsInt();
