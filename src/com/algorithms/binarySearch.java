@@ -4,7 +4,6 @@ package com.algorithms;
 //n assign the start and end index accordingly
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class binarySearch
 {
