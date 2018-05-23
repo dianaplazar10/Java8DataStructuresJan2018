@@ -3,9 +3,9 @@
 3)Lowest common ancestor: lowest common ancestor in binary tree, given two nodes
 1. if the node class had a parent pointer
 2. if the node class did not have a parent pointer 
-4) Print a binary tree level-by-level  
+4) Print a binary tree level-by-level  >>>>TreeTraversals>>printLevelOrder
 
-5) Write a function to calculate the maximum depth of a binary tree.  
+5) Write a function to calculate the maximum depth of a binary tree.  >>>>TreeTraversals>>maxDepth
 Answer Question
 Calculate the shortest distance between 2 words in a word list. The word list is given to the constructor, and may contain more than 1 instance of each word. Example: "the quick brown fox quick jumps", distance(fox, quick) should return 1 (indices for fox = (3), quick = (1, 4), smallest distance is between 3 & 4)  
 

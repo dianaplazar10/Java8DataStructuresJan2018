@@ -10,16 +10,12 @@ import java.util.Set;
 	     public static void main(String args[]){
 	         //define an array
 	         int[] intArr = {100,4,200,1,3,2,6,7,9};
-	         int arrLength = intArr.length; // 9
-	         
-	         LongestConseqSubArray_OfIntegers longestSeqClass = new LongestConseqSubArray_OfIntegers();
-	        //pass this array to the function
-	        int longestSeqCount = longestSeqClass.longestSeqCount(intArr);
+	        int longestSeqCount = LongestConseqSubArray_OfIntegers.longestSeqCount(intArr);
 	        System.out.println("longest consecutive elements sequence" + longestSeqCount);
 	    }
     
     
-    public int longestSeqCount(int[] intArr){
+    public static int longestSeqCount(int[] intArr){
         //return 0 for empty array
         if(intArr.length==0){
             return 0;

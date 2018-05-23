@@ -1,5 +1,8 @@
 package com.Trees;
 
+import java.util.ArrayList;
+import java.util.List;
+
 //Java program for different tree traversals
 
 /* Class containing left and right child of current
@@ -81,8 +84,7 @@ int height(Node node){
         return 0;
     if(node.left == null && node.right == null) {
         return 1;
-    }
-    else {
+    } else {
         return 1 + Math.max(height(node.left), height(node.right));
     }
 }
@@ -90,8 +92,7 @@ int height(Node node){
 void printLevelOrder(Node node)
 {
     int h = height(root);
-    int i;
-    for (i=1; i<=h; i++)
+    for (int i=1; i<=h; i++)
         printGivenLevel(root, i);
 }
 
@@ -109,6 +110,70 @@ void printGivenLevel (Node root ,int level)
     }
 }
  
+public int maxDepth(Node root) {
+    if(root==null)
+        return 0; 
+    return 1+ Math.max(maxDepth(root.left), maxDepth(root.right));
+}
+
+public static int minDepth(Node root) {
+    if (root == null) 
+        return 0;
+    return 1 + Math.min(minDepth(root.left), minDepth(root.right)); 
+}
+//alternate:
+//public int minDepth(Node root) {
+//    if(root == null)
+//        return 0;
+//    LinkedList<Node> nodes = new LinkedList<Node>();
+//    LinkedList<Integer> counts = new LinkedList<Integer>();
+//
+//    nodes.add(root);
+//    counts.add(1);
+//
+//    while(!nodes.isEmpty()){
+//        Node curr = nodes.remove();
+//        int count = counts.remove();
+//
+//        if(curr.left == null && curr.right == null)
+//            return count;
+//        if(curr.left != null){
+//            nodes.add(curr.left);
+//            counts.add(count+1);
+//        }
+//        if(curr.right != null){
+//            nodes.add(curr.right);
+//            counts.add(count+1);
+//        }
+//    }
+//    return 0;
+//}
+
+public List<List<Integer>> findLeaves(Node root) {
+    List<List<Integer>> result = new ArrayList<List<Integer>>();
+    helper(result, root);
+    return result;
+}
+ 
+// traverse the tree bottom-up recursively
+private int helper(List<List<Integer>> list, Node root){
+    if(root==null)
+        return -1;
+ 
+    int left = helper(list, root.left);
+    int right = helper(list, root.right);
+    int curr = Math.max(left, right)+1;
+ 
+    // the first time this code is reached is when curr==0,
+    //since the tree is bottom-up processed.
+    if(list.size()<=curr){
+        list.add(new ArrayList<Integer>());
+    }
+ 
+    list.get(curr).add(root.data);
+ 
+    return curr;
+}
 
  // Wrappers over above recursive functions
  void printPostorder()  {     printPostorder(root);  }
@@ -138,5 +203,7 @@ void printGivenLevel (Node root ,int level)
      
      System.out.println("\nLevelorder traversal of binary tree is -----------------------");
      tree.printLevelOrder();
+     
+     System.out.println("\nMax depth of root of binary tree is -----------------------"+tree.maxDepth(tree.root));
  }
 }
