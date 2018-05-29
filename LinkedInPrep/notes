@@ -26,3 +26,10 @@ Implement get() and put() methods from HashTable ?
 13) Implement kmeans for a collection of 2d points.  
 
 14) How to build a key value store?  
+
+
+Interview question:
+given a store of data and a key.. find if the any 2 numbers are present in store, such that their sum is equal to the key.
+Solution:
+finally hint was, given one of the digit is known..
+so, then subtract the key from th eknow value and check if teh answer exists in the store. hence, only one for loop. O[n]
