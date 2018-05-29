@@ -1,4 +1,4 @@
-package com.lambdas;
+package Lambdas_Java8;
 
 import java.util.ArrayList;
 import java.util.Date;

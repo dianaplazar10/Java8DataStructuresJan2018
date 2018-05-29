@@ -2,3 +2,8 @@ Max of a 2 dimentional array in lambdas:
 ---------------------------------------
 	IntStream stream = Arrays.stream(arr).flatMapToInt(Arrays::stream);
 	int max = stream.max().getAsInt();
+	
+	
+	refer:https://www.javacodegeeks.com/2018/05/using-java-stream-summary-statistics.html
+	IntSummaryStatistics API(Example: IntSummartStats.java)
+	
