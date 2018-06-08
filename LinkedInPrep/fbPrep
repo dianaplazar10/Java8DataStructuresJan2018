@@ -1,0 +1,99 @@
+https://careercup.com/page?pid=facebook-interview-questions
+
+-------------------------------------------------
+Congrats on aonecode member A.P. for signing the offer with FB! Thanks for sharing the experience with us. 
+phone: 
+postorder tree traversal recursive -> iterative 
+add two binary number 
+
+
+on-site: 
+1 ring buffer 
+2 merge intervals 
+3 Leetcode alien dictionary 
+4.sort list of words
+
+AONECODE.COM
+-------------------------------------------------
+
+Given a number, rearrange the digits of that number to make a higher number, among all such permutations that are greater,one of them is the smallest, Find the smallest greater permutation (the next Permutation). 
+
+Examples: 
+next_permutation (12) = 21 
+next_permutation (315) = 351 
+next_permutation (583) = 835 
+next_permutation (12389) = 12398 
+next_permutation (34722641) = 34724126
+-------------------------------------------------
+
+If b == “1”: 
+quit()
+
+-------------------------------------------------
+
+Given a binary tree, where each node represents an integer, find the max value of path sum
+
+-------------------------------------------------
+
+Q: Find number of Islands. 
+XXXOO 
+OOOXX 
+XXOOX 
+Return 3 islands. 
+1 1 1OO 
+OOO2 2 
+3 3OO 2 
+
+
+Followup: If the board is too big to fit in memory, how to get the number?
+-------------------------------------------------
+Interleave list of lists in Java 
+Example: 
+input = [[1,2,3], [9, 0], [5], [-4,-5,-2,-3,-1]]; 
+output = [1,9,5,-4,2,0,-5,3,-2,-3,-1]
+
+-------------------------------------------------
+
+Given an array of n elements return true if 3 of the sum of 3 elements is equal to a constant c 
+
+Example array a[6,2,3,4] constant c = 9 
+
+if a[1] + [2] + [3] == c return true 
+
+The size of the array is n 
+
+If any set of 3 elements is equal to the constant c, then return false
+
+-------------------------------------------------
+Given a string with alpha-numeric characters and parentheses, return a string with balanced parentheses by removing the fewest characters possible. You cannot add anything to the string.
+-------------------------------------------------
+Given a collection of two dimensional points and a number k, return the k closest points to (0,0) by Euclidean distance.
+-------------------------------------------------
+
+How do I report a problem with Facebook?Facebook Advertising Help, Tips & Support | Facebook for Business provide facebook help center number ?
+
+-------------------------------------------------
+Given a string as input, return the list of all the patterns possible:
+
+
+'1' : ['A', 'B', 'C'], 
+'2' : ['D', 'E'],
+'12' : ['X']
+'3' : ['P', 'Q']
+Example if input is '123', then output should be [ADP, ADQ, AEP, AEQ, BDP, BDQ, BEP, BEQ, CDP, CDQ, CEP, CEQ, XP, XQ]
+-------------------------------------------------
+
+Move[inplace] the non zero elements at the one end(end of array) and return the numbers of non zero elements in output array 
+
+Solution : https://www.geeksforgeeks.org/move-zeroes-end-array/
+
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
