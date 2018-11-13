@@ -18,21 +18,24 @@ public class Add2Front_LinkedList {
      list.add("CC");
      list.add("DD");
  
-     // Display List element
      System.out.println("LinkedList Elements:"+list);
+//     OUTPUT:
+//         LinkedList Elements:[AA, BB, CC, DD]
 
      
      list.add("NEW");
-     
-     // Display List element
      System.out.println("LinkedList New Elements:"+list);
+//      OUTPUT:
+//      LinkedList New Elements:[AA, BB, CC, DD, NEW]
+     
+     
      // Adding element to front of LinkedList
      /* public boolean offerFirst(E e): Inserts the 
       * specified element at the front of this list.
       */
      list.offerFirst("NEW Element");
-
-     // Displaying List after adding element
      System.out.println("LinkedList After Addition:"+list);
+//      OUTPUT:
+//      LinkedList After Addition:[NEW Element, AA, BB, CC, DD, NEW]
   }
 }

@@ -1,4 +1,4 @@
-package com.datastructures;
+package com.DS;
 //reference: https://www.lynda.com/Java-tutorials/Iterable-interface/534633/594587-4.html
 import java.util.Arrays;
 import java.util.Collection;

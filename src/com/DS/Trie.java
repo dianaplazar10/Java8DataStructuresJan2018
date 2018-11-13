@@ -1,6 +1,6 @@
 //refer :https://www.geeksforgeeks.org/trie-insert-and-search/
 
-package com.datastructures;
+package com.DS;
 // Java implementation of search and insert operations
 // on Trie
 public class Trie {
